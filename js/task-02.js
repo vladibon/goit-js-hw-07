@@ -8,5 +8,4 @@ const makeIngredientItem = ingredient => {
   return ingredientRef;
 };
 
-const elements = ingredients.map(makeIngredientItem);
-ingredientsRef.append(...elements);
+ingredientsRef.append(...ingredients.map(makeIngredientItem));
